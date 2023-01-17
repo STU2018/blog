@@ -26,6 +26,8 @@ const update = multer({
 app.use(update.any())
 
 
+app.use("/",require("./routers/TestRouter"));
+
 app.get("/", (req, res) => {
     res.send("hello world");
 });
